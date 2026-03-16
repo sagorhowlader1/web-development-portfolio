@@ -9,9 +9,9 @@
 
 :root{
     --bg-color: #f6f9f2f1;
-    --second-bg-color: #003049;
+    --second-bg-color: #1f1a2428;
     --text-color: #1a191c;
-    --text-second-color: #313647;
+    --text-second-color: #5e6483;
 
 }
 
@@ -75,6 +75,7 @@ nav li a:hover{
     transform: .5s;
 }
 
+/* home section code start here */
 
 .container{
     display: flex;
@@ -83,6 +84,9 @@ nav li a:hover{
     background: var(--bg-color);
 }
 
+.container img{
+    height: 60vh;
+}
 .contact{
     margin: 50px 350px;
 }
@@ -133,3 +137,72 @@ nav li a:hover{
     font-size: 25px;
     color: #F77F00;
 }
+
+
+/* about section code start here */
+.about-container{
+    height: 50vh;
+    background: var(--second-bg-color);
+    text-align: center;
+}
+
+.about-container h2{
+    margin: 35px;
+    padding: 20px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #313647;
+}
+
+.about-container p{
+    font-size: 30px;
+    margin: 0 80px;
+    text-align: center;
+    color: #313647;
+}
+
+
+/* skills section code start here */
+
+.skills-wrapper{
+    height: 50vh;
+    text-align: center;
+    background: #d1dee4;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skills-contact{
+    margin: 40px;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.skills-contact i{
+    font-weight: 600;
+    font-size: 35px;
+    /* color: #ffab52fd; */
+}
+
+.skills-contact h3{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+}
+
+.skills-contact p{
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+}
+
+/* seriveces section code start here */
