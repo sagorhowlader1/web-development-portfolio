@@ -1,66 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: 'Open sans', sans-serif;
 }
 
-:root{
+:root {
     --bg-color: #f6f9f2f1;
-    --second-bg-color: #1f1a2428;
+    --second-bg-color: #bdc8d9;
     --text-color: #1a191c;
-    --text-second-color: #5e6483;
+    --text-second-color: #14161b;
 
 }
 
-body{
-    /* background: var(--bg-color); */
-    /* color: white; */
+body {
+    /* background: #d1dee4; */
 }
 
 
-nav{
+header {
+    background: #94969c;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
-    margin: 30px 200px;
+    padding: 45px;
+    margin: 0 200px;
 }
 
-.logo{
+.logo {
     font-weight: 700;
     font-size: 45px;
 }
 
-span{
+span {
     color: #F77F00;
 }
 
-nav ul{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
 }
 
 
-nav li a{
+nav li a {
     text-decoration: none;
     margin: 30px;
     font-size: 20px;
     color: var(--text-color);
 }
 
-nav li a:hover{
-    color: #F77F00;
+nav li a:hover {
+    color: #fff;
     transform: .5s;
 
 }
 
-.btn{
+.btn {
     padding: 18px 40px;
     background: #F77F00;
     border: none;
@@ -70,49 +74,55 @@ nav li a:hover{
     font-size: 20px;
 }
 
-.btn:hover{
+.btn:hover {
     background: #c0ac96;
     transform: .5s;
 }
 
 /* home section code start here */
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: var(--bg-color);
+    /* background-image: url('images/banner.jpg'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
 }
 
-.container img{
+.container img {
     height: 60vh;
 }
-.contact{
+
+.contact {
     margin: 50px 350px;
 }
 
-.contact h2{
+.contact h2 {
     font-size: 30px;
     padding: 5px 10px;
     font-weight: 700;
     color: var(--text-color);
 }
-.contact h3{
+
+.contact h3 {
     font-size: 25px;
     padding: 10px;
     font-weight: 700;
     color: var(--text-color);
 }
 
-.contact p{
+.contact p {
     font-size: 25px;
     padding: 10px;
     color: var(--text-second-color);
-    
+
 }
 
 
-.btns{
+.btns {
     background: #F77F00;
     font-size: 25px;
     margin: 20px;
@@ -123,16 +133,16 @@ nav li a:hover{
 }
 
 
-.btns:hover{
+.btns:hover {
     background: #c0ac96;
     transform: .5s;
 }
 
-.social-icon{
+.social-icon {
     padding: 20px 25px;
 }
 
-.social-icon i{
+.social-icon i {
     padding: 5px 20px;
     font-size: 25px;
     color: #F77F00;
@@ -140,23 +150,23 @@ nav li a:hover{
 
 
 /* about section code start here */
-.about-container{
+.about-container {
     height: 50vh;
     background: var(--second-bg-color);
     text-align: center;
 }
 
-.about-container h2{
-    margin: 35px;
+.about-container h2 {
+    margin: 0 35px;
     padding: 20px;
     font-size: 45px;
     font-weight: 700;
     color: #313647;
 }
 
-.about-container p{
+.about-container p {
     font-size: 30px;
-    margin: 0 80px;
+    margin: 80px;
     text-align: center;
     color: #313647;
 }
@@ -164,40 +174,52 @@ nav li a:hover{
 
 /* skills section code start here */
 
-.skills-wrapper{
+.skills-wrapper {
     height: 50vh;
     text-align: center;
     background: #d1dee4;
 }
 
-.skills-container{
+.skills-title h2 {
+    font-size: 45px;
+    font-weight: bold;
+    padding: 50px 30px;
+}
+
+.skills-container {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.skills-contact{
+.skills-contact {
     margin: 40px;
     align-items: center;
     padding: 10px;
+    border: 2px solid #000;
+    border-radius: 20px;
 }
 
 
-.skills-contact i{
+.skills-contact:hover {
+    background: #ccdddd;
+    transform: .5s;
+}
+
+.skills-contact i {
     font-weight: 600;
     font-size: 35px;
-    /* color: #ffab52fd; */
 }
 
-.skills-contact h3{
+.skills-contact h3 {
     padding: 10px;
     font-size: 25px;
     font-weight: 600;
     color: #000;
 }
 
-.skills-contact p{
+.skills-contact p {
     padding: 5px;
     font-size: 18px;
     font-weight: 500;
@@ -205,4 +227,36 @@ nav li a:hover{
     text-align: justify;
 }
 
-/* seriveces section code start here */
+/* contact section code start here */
+
+.contact-container {}
+
+.contact-title {
+    font-size: 35px;
+    font-weight: 800;
+    color: #000;
+    text-align: center;
+    margin: 25px;
+}
+
+
+.contact-box input,
+textarea {
+    width: 45%;
+    padding: 18px 35px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.contact-box input {
+    margin: 10px 0;
+}
+
+
+.footer-tiile {
+    margin: 30px;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
